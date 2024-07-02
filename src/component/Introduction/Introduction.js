@@ -8,7 +8,6 @@ export default function Introduction() {
           <span className="hello">Hello,</span>
           <h1 className='myself'>I am <span className="name">Ankit</span> <br />
           Web Deve<span className="moving">loper</span></h1>
-          <span className="hello">Frontend</span>
         </div>
         <div className="right-side">
           <img className='img-fluid' src={photo} alt="my-photo" />
