@@ -28,6 +28,7 @@ export default function Contact() {
   };
 
   return (
+    <>
     <div className='contact-page container' id='contact'>
       <h1 className='contact-heading'>Contact Me</h1>
       <p className='contant-disc'>Please leave your message</p>
@@ -44,5 +45,7 @@ export default function Contact() {
         </div>
       </form>
     </div>
+    <footer className='footer'>All copy rights are reserved</footer>
+    </>
   )
 }

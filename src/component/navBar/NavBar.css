@@ -24,12 +24,12 @@
         color: #108073;
         border-bottom: 2px solid #108073;
     }
-    .contact{
+    /* .contact{
         background-color: white;
         color: black;
         padding: .5rem;
         border-radius: 2rem;
-    }
+    } */
 }
 @media(max-width: 992px){
     .navbar{
@@ -43,10 +43,10 @@
         object-fit: cover;
         padding: 0px;
     }
-    .contact{
+    /* .contact{
         background-color: transparent;
         display: inline;
-    }
+    } */
     .nav-link{
         color: black;
     }
