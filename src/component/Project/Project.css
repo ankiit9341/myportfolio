@@ -1,0 +1,86 @@
+.Project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .project-card {
+    position: relative;
+    border: 1px solid black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    cursor: pointer;
+  }
+  
+  .project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .project-details {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-card:hover .project-details {
+    transform: translateY(-100%);
+  }
+  
+  .external-link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 2rem;
+    color: white;
+  }
+  
+  @media (max-width: 2000px) {
+    .project-card {
+      height: 400px;
+    }
+  
+    .project-img, .project-card {
+      aspect-ratio: 1/1;
+    }
+  }
+  
+  /* @media (min-width: 2001px) {
+    .Project {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .project-card {
+      flex: 1;
+      margin: 20px;
+      max-width: none;
+    }
+  
+    .project-img, .project-card {
+      height: auto;
+    }
+  } */
+  
+  /* Ensuring the <a> tag triggers when the parent is clicked */
+  .project-card a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+  }
+  

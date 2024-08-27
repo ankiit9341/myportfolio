@@ -6,4 +6,8 @@
 .card{
     height: 260px;
     box-shadow: 3px 3px 10px black;
+    background-color: #183D3D;
+}
+p{
+    color: white;
 }

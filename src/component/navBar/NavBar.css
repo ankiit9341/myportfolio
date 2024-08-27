@@ -1,56 +1,69 @@
-@media(min-width: 993px){
-    .navbar{
-        /* box-shadow: 2px 2px 5px black; */
+@media(min-width: 993px) {
+    .navbar {
         position: sticky;
         top: 0;
         z-index: 3;
     }
-    #logo{
-        height: 40px;
-        object-fit: cover;
-        padding: 0px;
-        margin-left: 20px;
-        margin-right: 200px;
+    .logo {
+        font-weight: bolder;
+        color: #EEF5FF;
+        margin-right: 25vh;
     }
-    .navbar-nav{
+    .navbar-nav {
         width: 700px;
         display: flex;
         justify-content: space-around;
     }
-    .nav-link{
+    .nav-link {
         font-size: larger;
+        position: relative;
+        padding-bottom: 5px;
+        color: #EEF5FF;
+        text-decoration: none;
     }
-    .nav-link:hover{
+    .nav-link.active::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 2px;
+        background-color: #EEF5FF;
+        transition: width 0.3s ease;
+    }
+    .nav-link:hover {
         color: #108073;
         border-bottom: 2px solid #108073;
     }
-    /* .contact{
-        background-color: white;
-        color: black;
-        padding: .5rem;
-        border-radius: 2rem;
-    } */
 }
-@media(max-width: 992px){
-    .navbar{
-        /* box-shadow: 2px 2px 5px black; */
+
+@media(max-width: 992px) {
+    .navbar {
         position: sticky;
         top: 0;
         z-index: 3;
     }
-    #logo{
+    #logo {
         height: 40px;
         object-fit: cover;
         padding: 0px;
     }
-    /* .contact{
-        background-color: transparent;
-        display: inline;
-    } */
-    .nav-link{
+    .nav-link {
         color: black;
+        position: relative;
+        padding-bottom: 5px;
     }
-    .nav-item{
+    .nav-link.active::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 2px;
+        background-color: black; /* Adjust this color for mobile view */
+        transition: width 0.3s ease;
+    }
+    .nav-item {
         display: inline;
     }
 }

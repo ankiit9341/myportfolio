@@ -9,6 +9,7 @@
     box-shadow: 2px -2px 5px black;
     margin-bottom: 30px;
     border-radius: 2rem;
+    background-color: #183D3D;
 }
 .soft-skill{
 
@@ -16,5 +17,6 @@
     /* border: .01px solid rgb(30,30,30); */
     padding: 30px;
     box-shadow: 2px -2px 5px black;
+    background-color: #183D3D;
     border-radius: 3rem;
 }

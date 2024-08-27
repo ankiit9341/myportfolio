@@ -12,7 +12,7 @@ export default function Contact() {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_goox6g5', 'template_tzhl98h', form.current, {
+      .sendForm('service_8x3wskp', 'template_tzhl98h', form.current, {
         publicKey: 'Ni8QEsQzhiBQEf2V9',
       })
       .then(
@@ -29,7 +29,7 @@ export default function Contact() {
 
   return (
     <>
-    <div className='contact-page container' id='contact'>
+    <div className='contact-page container' id='contact' style={{ backgroundColor:'#183D3D', color:'white'}}>
       <h1 className='contact-heading'>Contact Me</h1>
       <p className='contant-disc'>Please leave your message</p>
       <form action="" className='contact-form' ref={form} onSubmit={sendEmail}>
